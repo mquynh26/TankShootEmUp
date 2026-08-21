@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f3bc8b21-7045-42c2-a801-1cf836f5dc12" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.000000004048403" />
+      <entry key="MS500" value="1.0209631597985875" />
+      <entry key="S2" value="1.3845926630175387" />
+      <entry key="S5" value="1.8473356377118932" />
+      <entry key="S10" value="2.4037650458665754" />
+      <entry key="S30" value="3.2610463049282696" />
+      <entry key="S60" value="3.596542393368103" />
+      <entry key="M2" value="3.923667126859554" />
+      <entry key="M5" value="8.269526044185248" />
+      <entry key="M10" value="21.265833953214237" />
+      <entry key="M15" value="32.77921013891097" />
+      <entry key="M30" value="54.59288062133994" />
+      <entry key="H1" value="73.31627100486172" />
+      <entry key="H2" value="86.05561080971259" />
+      <entry key="H4" value="93.56931864208893" />
+      <entry key="D1" value="100.5255114873881" />
+      <entry key="W1" value="101.78757950883582" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="3.641936348410907E-18" />
+      <entry key="MS500" value="3.252868225322319E-4" />
+      <entry key="S2" value="0.13429709471429604" />
+      <entry key="S5" value="0.44794701511384283" />
+      <entry key="S10" value="0.6692884393995183" />
+      <entry key="S30" value="0.8747241955898073" />
+      <entry key="S60" value="0.9356378833766924" />
+      <entry key="M2" value="1.0088533181852672" />
+      <entry key="M5" value="1.8837160247553635" />
+      <entry key="M10" value="3.624361277973426" />
+      <entry key="M15" value="4.790521806393495" />
+      <entry key="M30" value="6.495073231292935" />
+      <entry key="H1" value="7.626549929501381" />
+      <entry key="H2" value="8.279909654681255" />
+      <entry key="H4" value="8.631187024955105" />
+      <entry key="D1" value="8.937275370341478" />
+      <entry key="W1" value="8.991008075146658" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="2.7925218504869645E-6" />
+      <entry key="MS500" value="0.07782461352926695" />
+      <entry key="S2" value="0.6710531474198534" />
+      <entry key="S5" value="1.4911159490274632" />
+      <entry key="S10" value="2.4424734052542107" />
+      <entry key="S30" value="3.834385306378588" />
+      <entry key="S60" value="4.3659305466506515" />
+      <entry key="M2" value="4.84394640597228" />
+      <entry key="M5" value="10.105511721401552" />
+      <entry key="M10" value="24.85210248998268" />
+      <entry key="M15" value="37.53700717880105" />
+      <entry key="M30" value="61.06552155619571" />
+      <entry key="H1" value="80.92932751253744" />
+      <entry key="H2" value="94.32806179422685" />
+      <entry key="H4" value="102.19657594471731" />
+      <entry key="D1" value="109.46210189957353" />
+      <entry key="W1" value="110.77848896759562" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3H0HWcUZgatzboUHGjXFzA3vrRH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.62f3\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;D:\MyGame\TankShootEmUppp\My project&quot; -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="D:\MyGame\TankShootEmUppp\My project" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.62f3\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;D:\MyGame\TankShootEmUppp\My project&quot; -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="D:\MyGame\TankShootEmUppp\My project" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to" type="UnityDevicePlayer" factoryName="UnityAttachToDevicePlayer">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f3bc8b21-7045-42c2-a801-1cf836f5dc12" name="Changes" comment="" />
+      <created>1784998107537</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1784998107537</updated>
+      <workItem from="1784998112730" duration="4020000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+    <option name="unityProject" value="true" />
+    <option name="unityProjectFolder" value="true" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
