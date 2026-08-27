@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class Tank : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Transform killPoint;
+    void FixedUpdate()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (Mathf.Abs(transform.position.y - killPoint.position.y) < 0.05f)
+        {
+            //GameOver();
+        }
     }
 }

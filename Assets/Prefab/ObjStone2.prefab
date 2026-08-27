@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 2883879629729251359}
   - component: {fileID: 575426635221542262}
   - component: {fileID: 6837901797693609743}
+  - component: {fileID: 8842619598692897436}
   m_Layer: 0
   m_Name: ObjStone2
   m_TagString: Untagged
@@ -273,3 +274,19 @@ CircleCollider2D:
   m_Offset: {x: 0.8636284, y: -0.7665918}
   serializedVersion: 2
   m_Radius: 0.81051826
+--- !u!114 &8842619598692897436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3078397862453459482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ba99d050d57dc49a6f6e67d9b1861e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructibleType: 0
+  maxHP: 5
+  baseO: {fileID: 2993401148502389806}
+  decalO: {fileID: 2946147224748587454}

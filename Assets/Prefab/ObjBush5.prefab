@@ -30,7 +30,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2237139694133420279}
+  m_Father: {fileID: 1342701087145085224}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8616782729469865562
 SpriteRenderer:
@@ -94,7 +94,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2237139694133420279}
   - component: {fileID: 1088575917714561568}
-  m_Layer: 0
+  - component: {fileID: 6890705737451675148}
+  m_Layer: 3
   m_Name: ObjBush5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115,7 +116,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1342701087145085224}
-  - {fileID: 2279614455490673563}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1088575917714561568
@@ -153,6 +153,22 @@ CircleCollider2D:
   m_Offset: {x: -0.21136548, y: 0.12329664}
   serializedVersion: 2
   m_Radius: 0.4823862
+--- !u!114 &6890705737451675148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2317187611129402512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ba99d050d57dc49a6f6e67d9b1861e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructibleType: 2
+  maxHP: 1
+  baseO: {fileID: 6266174101394376212}
+  decalO: {fileID: 901275678484232389}
 --- !u!1 &6266174101394376212
 GameObject:
   m_ObjectHideFlags: 0
@@ -182,7 +198,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2279614455490673563}
   m_Father: {fileID: 2237139694133420279}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2575234984755105046

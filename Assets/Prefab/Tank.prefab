@@ -1,36 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &402903806954793838
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7152785528870413567}
-  m_Layer: 0
-  m_Name: dt1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7152785528870413567
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 402903806954793838}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.38, y: -0.29, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6674515414816840966}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1128100874952641492
 GameObject:
   m_ObjectHideFlags: 0
@@ -43,7 +12,9 @@ GameObject:
   - component: {fileID: 3287072146574981759}
   - component: {fileID: -5033296525392693492}
   - component: {fileID: 4016667110294983172}
-  m_Layer: 0
+  - component: {fileID: 7000037212031322827}
+  - component: {fileID: 1945273842732851285}
+  m_Layer: 6
   m_Name: Tank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,9 +38,6 @@ Transform:
   - {fileID: 2199124478839560421}
   - {fileID: 4033928915311286522}
   - {fileID: 953592195629111257}
-  - {fileID: 7099542691531171491}
-  - {fileID: 7152785528870413567}
-  - {fileID: 7381747975769111361}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &3287072146574981759
@@ -156,72 +124,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3466d262a319e684291e20f3bc727e31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 1
-  baseTank: {fileID: 0}
-  pointPlayer: {fileID: 0}
-  moveSpeed: 1
---- !u!1 &2629804376250356959
-GameObject:
+  rotateSpeed: 3
+  baseTank: {fileID: 5076909209089529123}
+  pointPlayer: {fileID: 7428914925604444292, guid: e7fc846e97a75ae4f82c14a0f834c910, type: 3}
+  moveSpeed: 6
+--- !u!114 &7000037212031322827
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7381747975769111361}
-  m_Layer: 0
-  m_Name: dt2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7381747975769111361
-Transform:
+  m_GameObject: {fileID: 1128100874952641492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1054855436cc952478dc71df8ed82465, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHp: 36
+  currentHp: 0
+--- !u!114 &1945273842732851285
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2629804376250356959}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.39, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6674515414816840966}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &3564055839486655158
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7099542691531171491}
-  m_Layer: 0
-  m_Name: dt
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7099542691531171491
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3564055839486655158}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.26, y: 0.19, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6674515414816840966}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 1128100874952641492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cd38965b3a39234483812d691c3060d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  killPoint: {fileID: 2703423943918131847, guid: 93b449cad0e70604ba4926eebc756c0b, type: 3}
 --- !u!1 &4881897344100711288
 GameObject:
   m_ObjectHideFlags: 0

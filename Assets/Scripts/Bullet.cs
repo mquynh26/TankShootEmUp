@@ -19,7 +19,7 @@ public class Bullet : MonoBehaviour
         _turretData = turretData;
         if (gameObject.CompareTag("BulletEnemy"))
         {
-            _rb.velocity = (Vector2)transform.up * turretData.bulletSpeed + Vector2.down * PlatMove.Speed;
+            _rb.velocity = (Vector2)transform.up * turretData.bulletSpeed + Vector2.down * PlatMap.Speed;
         }
         else
         {
@@ -37,6 +37,20 @@ public class Bullet : MonoBehaviour
         if(_turretData == null) return;
         ObjectPoolManager.Instance.ReturnPool(_turretData.bulletType, gameObject);
     }
-    
-    public float Damage => _turretData.bulletDamage;
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        IDamageable damageable = collision.GetComponent<IDamageable>();
+        if (damageable != null)
+        {
+            Obstacle obstacle = collision.GetComponentInParent<Obstacle>();
+            if (obstacle != null && (_turretData.bulletType == PoolType.BulletEnemy1 || _turretData.bulletType == PoolType.BulletEnemy2))
+            {
+                ReturnPool();
+                return;
+            }
+            damageable.TakeDamage(_turretData.bulletDamage);
+        }
+        ReturnPool();
+    }
 }

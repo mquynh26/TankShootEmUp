@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8716500902701144269}
   - component: {fileID: 243192816595092171}
-  m_Layer: 0
+  - component: {fileID: 2799830494276919735}
+  m_Layer: 3
   m_Name: ObjBush2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,7 +32,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5861959314604251530}
-  - {fileID: 2671192010544323055}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &243192816595092171
@@ -69,6 +69,22 @@ CircleCollider2D:
   m_Offset: {x: -0.19375171, y: 0.12329647}
   serializedVersion: 2
   m_Radius: 0.4295449
+--- !u!114 &2799830494276919735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360959225351398978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ba99d050d57dc49a6f6e67d9b1861e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructibleType: 2
+  maxHP: 1
+  baseO: {fileID: 4935607818377899163}
+  decalO: {fileID: 4320558685954678982}
 --- !u!1 &4320558685954678982
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,7 +115,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8716500902701144269}
+  m_Father: {fileID: 5861959314604251530}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3823886841403617830
 SpriteRenderer:
@@ -182,7 +198,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2671192010544323055}
   m_Father: {fileID: 8716500902701144269}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8674709681447650077

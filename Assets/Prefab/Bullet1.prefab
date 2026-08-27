@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7289479383739378491}
   - component: {fileID: 5379162068863521692}
   - component: {fileID: -8404928016905457821}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bullet1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23a711eed99c3db458df48e2b5662878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDistance: {fileID: 8134414416178527014, guid: 91826423a5f2bd54e9224f67ac4002fc, type: 3}
 --- !u!1 &7038487305727368596
 GameObject:
   m_ObjectHideFlags: 0

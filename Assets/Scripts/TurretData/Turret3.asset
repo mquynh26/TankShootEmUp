@@ -15,8 +15,8 @@ MonoBehaviour:
   fireMode: 0
   turretType: 6
   bulletType: 7
-  bulletSpeed: 3
-  bulletDamage: 15
+  bulletSpeed: 6
+  bulletDamage: 3
   fireRate: 0.7
   burstCount: 0
   burstDelay: 0

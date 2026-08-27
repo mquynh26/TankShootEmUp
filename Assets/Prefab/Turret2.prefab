@@ -129,6 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 123542146e5a7be40b5894c073b2a79a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startShoot: {fileID: 8766817992760375678, guid: 524a67bf023c94d4f9c1cdfa9b35975d, type: 3}
   pointShoot:
   - {fileID: 4154853750734824594}
   turretData: {fileID: 11400000, guid: 42a47b2f51cb8e74f947535307fcd95d, type: 2}

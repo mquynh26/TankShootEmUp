@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7982592365423894733}
   - component: {fileID: 8894973065809584545}
+  - component: {fileID: 7028344141589312219}
   m_Layer: 0
   m_Name: ObjStone3
   m_TagString: Untagged
@@ -153,6 +154,22 @@ CapsuleCollider2D:
   m_Offset: {x: -0.13629138, y: 0.04543042}
   m_Size: {x: 2.4989426, y: 3.4075527}
   m_Direction: 0
+--- !u!114 &7028344141589312219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3483410720112726940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ba99d050d57dc49a6f6e67d9b1861e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructibleType: 0
+  maxHP: 5
+  baseO: {fileID: 7116574704862077472}
+  decalO: {fileID: 3290544895493157155}
 --- !u!1 &7116574704862077472
 GameObject:
   m_ObjectHideFlags: 0

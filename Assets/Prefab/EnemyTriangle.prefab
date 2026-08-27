@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 3401553302560237605}
   - component: {fileID: 2657478118068297374}
   - component: {fileID: 8215054528903906690}
+  - component: {fileID: 2633367058442642850}
   m_Layer: 0
   m_Name: Turret
   m_TagString: Untagged
@@ -131,11 +132,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 123542146e5a7be40b5894c073b2a79a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startShoot: {fileID: 8766817992760375678, guid: 524a67bf023c94d4f9c1cdfa9b35975d, type: 3}
   pointShoot:
   - {fileID: 87535709468140181}
   - {fileID: 1680970416723791813}
   - {fileID: 5598775699386227585}
   turretData: {fileID: 11400000, guid: f275c9e2608cf4b4685f24d55b06e42c, type: 2}
+--- !u!114 &2633367058442642850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3443599582303672743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e6ef55cf72180b409d313e0afbf81c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  typeR: 2
+  rotateSpeed: 90
 --- !u!1 &3683476164160743816
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,7 +256,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1420557065108540533}
   - component: {fileID: 1875288480343604858}
-  m_Layer: 0
+  - component: {fileID: 8548634983247219040}
+  - component: {fileID: 1236132436861417218}
+  m_Layer: 7
   m_Name: EnemyTriangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,6 +280,7 @@ Transform:
   m_Children:
   - {fileID: 995198786371122984}
   - {fileID: 3401553302560237605}
+  - {fileID: 2834172386257654586}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1875288480343604858
@@ -309,6 +328,35 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &8548634983247219040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6517299330449263761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ff5b51b1fa22244591b768d48e35562, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  killPoint: {fileID: 2703423943918131847, guid: 93b449cad0e70604ba4926eebc756c0b, type: 3}
+--- !u!114 &1236132436861417218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6517299330449263761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58db09b82dc72d141a1a4f249e0ce535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHp: 10
+  baseE: {fileID: 5726344521164683646}
+  turretE: {fileID: 3443599582303672743}
+  decanDie: {fileID: 4515871278814856717}
 --- !u!1 &8177130550887242289
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,3 +441,74 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &5208899519797990327
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1420557065108540533}
+    m_Modifications:
+    - target: {fileID: 8006479051786600589, guid: 53990f61e2c357943bde100941cc3151, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8006479051786600589, guid: 53990f61e2c357943bde100941cc3151, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8006479051786600589, guid: 53990f61e2c357943bde100941cc3151, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8006479051786600589, guid: 53990f61e2c357943bde100941cc3151, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8006479051786600589, guid: 53990f61e2c357943bde100941cc3151, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8006479051786600589, guid: 53990f61e2c357943bde100941cc3151, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8006479051786600589, guid: 53990f61e2c357943bde100941cc3151, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8006479051786600589, guid: 53990f61e2c357943bde100941cc3151, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8006479051786600589, guid: 53990f61e2c357943bde100941cc3151, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8006479051786600589, guid: 53990f61e2c357943bde100941cc3151, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8566448488595133882, guid: 53990f61e2c357943bde100941cc3151, type: 3}
+      propertyPath: m_Name
+      value: Decal_Turret3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8566448488595133882, guid: 53990f61e2c357943bde100941cc3151, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 53990f61e2c357943bde100941cc3151, type: 3}
+--- !u!4 &2834172386257654586 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8006479051786600589, guid: 53990f61e2c357943bde100941cc3151, type: 3}
+  m_PrefabInstance: {fileID: 5208899519797990327}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4515871278814856717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8566448488595133882, guid: 53990f61e2c357943bde100941cc3151, type: 3}
+  m_PrefabInstance: {fileID: 5208899519797990327}
+  m_PrefabAsset: {fileID: 0}
