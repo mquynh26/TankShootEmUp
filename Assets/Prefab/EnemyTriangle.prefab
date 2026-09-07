@@ -353,7 +353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58db09b82dc72d141a1a4f249e0ce535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 10
+  maxHp: 4
   baseE: {fileID: 5726344521164683646}
   turretE: {fileID: 3443599582303672743}
   decanDie: {fileID: 4515871278814856717}

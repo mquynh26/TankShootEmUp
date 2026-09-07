@@ -95,6 +95,8 @@ GameObject:
   - component: {fileID: 9183444603989381536}
   - component: {fileID: 2321834785457671573}
   - component: {fileID: 6986290278927653521}
+  - component: {fileID: 5326714458115391657}
+  - component: {fileID: 2706727491546483468}
   m_Layer: 10
   m_Name: Dron
   m_TagString: Untagged
@@ -190,3 +192,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5326714458115391657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2635707930358898427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ff5b51b1fa22244591b768d48e35562, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  killPoint: {fileID: 2703423943918131847, guid: 93b449cad0e70604ba4926eebc756c0b, type: 3}
+--- !u!114 &2706727491546483468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2635707930358898427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08bed2c18fcc404db4492903109330e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveType: 2
+  moveSpeed: 2
+  moveDistance: 2
+  enemyBase: {fileID: 279863029340132669}

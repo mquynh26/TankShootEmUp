@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destructibleType: 1
-  maxHP: 5
+  maxHP: 2
   baseO: {fileID: 4400273997698396739}
   decalO: {fileID: 6679388841618010586}
 --- !u!1 &2302083660173546840

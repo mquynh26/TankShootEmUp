@@ -93,6 +93,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6105010686723109355}
+  - component: {fileID: -8031853893255177374}
   m_Layer: 0
   m_Name: Bg1N1
   m_TagString: Untagged
@@ -149,6 +150,19 @@ Transform:
   - {fileID: 1464042218515828823}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-8031853893255177374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4041508539530176988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b7d4795050e9a4c98c699eb37a24b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
 --- !u!1 &4472117794427994343
 GameObject:
   m_ObjectHideFlags: 0
@@ -2546,6 +2560,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8885828359782962096, guid: e645c27b16d6df946b387e1974c27956, type: 3}
+      propertyPath: killPoint
+      value: 
+      objectReference: {fileID: 2703423943918131847, guid: 93b449cad0e70604ba4926eebc756c0b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

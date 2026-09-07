@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4460821766344706208}
   - component: {fileID: 1387981889052275496}
   - component: {fileID: 2872845155998932798}
+  - component: {fileID: 8885828359782962096}
   m_Layer: 7
   m_Name: EnemyAiming
   m_TagString: Untagged
@@ -93,10 +94,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58db09b82dc72d141a1a4f249e0ce535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 10
+  maxHp: 1
   baseE: {fileID: 7356976898090706025}
   turretE: {fileID: 6891354265499571057}
   decanDie: {fileID: 8889166573902928650}
+--- !u!114 &8885828359782962096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284347499032273534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ff5b51b1fa22244591b768d48e35562, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  killPoint: {fileID: 2703423943918131847, guid: 93b449cad0e70604ba4926eebc756c0b, type: 3}
 --- !u!1 &3402235828057768470
 GameObject:
   m_ObjectHideFlags: 0

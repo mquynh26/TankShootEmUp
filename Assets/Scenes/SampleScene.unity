@@ -581,6 +581,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 748192632}
+  - component: {fileID: 748192633}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -603,6 +604,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &748192633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748192630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c37c2c11b7825804da6dcf6238414c0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &772209739
 GameObject:
   m_ObjectHideFlags: 0
@@ -1133,7 +1146,7 @@ MonoBehaviour:
     - {fileID: 8189530819497400867, guid: 2c90381e5df75654abac9d6877ce645e, type: 3}
     - {fileID: 6398570564114851019, guid: 5364241c8bdfbca4288d4b25ff88d47d, type: 3}
     - {fileID: 1008822234573684960, guid: db725c75cc3d4b84d8cc1a2e9d85c828, type: 3}
-    poolSize: 4
+    poolSize: 1
   - poolType: 3
     prefab:
     - {fileID: 33881448832818555, guid: 79508d6d68ca7b54cace5f56cad0749c, type: 3}
@@ -1154,6 +1167,33 @@ MonoBehaviour:
     prefab:
     - {fileID: 2470307079897049983, guid: 159a4bee00202e54d8a5327892ff3314, type: 3}
     poolSize: 15
+  - poolType: 1
+    prefab:
+    - {fileID: 4041508539530176988, guid: 599cfd8385c729548a716fd05b40691f, type: 3}
+    - {fileID: 5651024724821055960, guid: 4bdc65c26b8cfbb45a71ffb9eff0789e, type: 3}
+    - {fileID: 3132340549013924501, guid: b72eaad9668520b40845392fc67ec594, type: 3}
+    - {fileID: 7436966304475413220, guid: b103310ccb294a84f97392e194e93234, type: 3}
+    - {fileID: 4577078003851002716, guid: 603b6c8b24e8b5b43ba9c5a2a33b931a, type: 3}
+    - {fileID: 1691287571803636723, guid: e92b826300eaff44dadd0e9dcca01204, type: 3}
+    - {fileID: 3586918038258615829, guid: cd7ce9e48ad7ec74c9fb1669126211d7, type: 3}
+    - {fileID: 2763089900018389885, guid: 95a758906b1744d4298c2edd0042015e, type: 3}
+    - {fileID: 3992649687939423705, guid: a46d9e9c321366f4ba74481c6b6dc3f3, type: 3}
+    - {fileID: 873238906607680067, guid: 7e1aa8d0c4f21344ca0054cfff43bb51, type: 3}
+    - {fileID: 7446736095167763907, guid: 6fdff537ed1f9b54ea3df8c4ef2e3c42, type: 3}
+    - {fileID: 1419257695057005287, guid: 513c109d65c11274fa608f8a0b0cb707, type: 3}
+    - {fileID: 6076831548085377588, guid: 3344a2e9d006cf447ac619c759f59af5, type: 3}
+    - {fileID: 2892634830334937254, guid: 6ffa119d0dd102845adcd5fa7de2118c, type: 3}
+    - {fileID: 196785616674085170, guid: bdce7dbac6755204186a7733243acb76, type: 3}
+    - {fileID: 8326626582370123375, guid: 7caeffc7573305e4d9e4befc221d1e02, type: 3}
+    - {fileID: 3908842098400014712, guid: e1e2202a511a5e447bd791b7301d14fb, type: 3}
+    - {fileID: 6542005937079350904, guid: 3be3061f0f758d441a9b2ea113ba85d0, type: 3}
+    - {fileID: 1747640336080129159, guid: ebc317999010bd44e835b0f35330f21f, type: 3}
+    - {fileID: 7188000195093309842, guid: 3f3c17f3f78091b47add12026e633d30, type: 3}
+    - {fileID: 8974835729879338221, guid: df1da61d622e1164c8084bd75291671b, type: 3}
+    - {fileID: 5230492773484920845, guid: 7add3c9c239d73449b3ee6c18038a13f, type: 3}
+    - {fileID: 3421852135278677458, guid: e14f6181d6acd2f4e8206f1fff0ba119, type: 3}
+    - {fileID: 9103569487950932147, guid: fc64d3bb092dbe6408182503d892b206, type: 3}
+    poolSize: 1
 --- !u!4 &1161908623
 Transform:
   m_ObjectHideFlags: 0
@@ -1685,6 +1725,8 @@ MonoBehaviour:
   pointStart: {fileID: 1026271906}
   pointSpawn: {fileID: 1879356111}
   pointEnd: {fileID: 5354775386108396767}
+  bgCount: 4
+  platCount: 24
 --- !u!4 &1907547130
 Transform:
   m_ObjectHideFlags: 0
@@ -1719,7 +1761,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1915600850
 Transform:
   m_ObjectHideFlags: 0
@@ -2241,7 +2283,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7183280754561629332
 Transform:
   m_ObjectHideFlags: 0
