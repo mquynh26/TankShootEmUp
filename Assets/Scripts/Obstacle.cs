@@ -15,6 +15,8 @@ public class Obstacle : MonoBehaviour, IDamageable
     [SerializeField] private int maxHP = 5;
     [SerializeField] private GameObject baseO;
     [SerializeField] private GameObject decalO;
+    [SerializeField] private HitFlash hitFlash;
+    [SerializeField] private Transform pointDamage;
     private int _currentHP;
 
     private void OnEnable()
@@ -24,13 +26,20 @@ public class Obstacle : MonoBehaviour, IDamageable
 
     public void TakeDamage(int damage)
     {
-        if (destructibleType != DestructibleType.Bullet) return;
-
-        _currentHP = _currentHP - damage;
-
-        if (_currentHP <= 0)
+        if (transform.position.y <= pointDamage.position.y)
         {
-            DestroyObstacle();
+            if (destructibleType != DestructibleType.Bullet) return;
+
+            if (hitFlash != null)
+            {
+                hitFlash.Flash();
+            }
+            _currentHP = _currentHP - damage;
+
+            if (_currentHP <= 0)
+            {
+                DestroyObstacle();
+            }
         }
     }
 

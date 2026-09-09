@@ -9,6 +9,8 @@ public class EnemyHealth : MonoBehaviour, IDamageable
     [SerializeField] private GameObject baseE;
     [SerializeField] private GameObject turretE;
     [SerializeField] private GameObject decanDie;
+    [SerializeField] private HitFlash hitFlash;
+    [SerializeField] private Transform damagePoint;
     private int _currentHp;
 
     private void OnEnable()
@@ -18,13 +20,22 @@ public class EnemyHealth : MonoBehaviour, IDamageable
 
     public void TakeDamage(int damage)
     {
-        _currentHp = _currentHp - damage;
-        if (_currentHp <= 0)
+        if (transform.position.y <= damagePoint.position.y)
         {
-            _currentHp = 0;
-            Die();
+            _currentHp = _currentHp - damage;
+
+            if (hitFlash != null)
+            {
+                hitFlash.Flash();
+            }
+
+            if (_currentHp <= 0)
+            {
+                _currentHp = 0;
+                Die();
+            }
         }
-    }
+}
 
     private void Die()
     {
