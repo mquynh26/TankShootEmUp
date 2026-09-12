@@ -17,7 +17,7 @@ public class Bullet : MonoBehaviour
     public void Init(TurretData turretData)
     {
         _turretData = turretData;
-        if (gameObject.CompareTag("BulletEnemy"))
+        if (gameObject.CompareTag("BulletEnemy1") || gameObject.CompareTag("BulletEnemy2") )
         {
             _rb.velocity = (Vector2)transform.up * turretData.bulletSpeed + Vector2.down * PlatMap.Speed;
         }
@@ -44,7 +44,7 @@ public class Bullet : MonoBehaviour
         if (damageable != null)
         {
             Obstacle obstacle = collision.GetComponentInParent<Obstacle>();
-            if (obstacle != null && (_turretData.bulletType == PoolType.BulletEnemy1 || _turretData.bulletType == PoolType.BulletEnemy2))
+            if (obstacle != null && (_turretData.bulletType == PoolType.BulletEnemy1 || _turretData.bulletType == PoolType.BulletEnemy2) || collision.CompareTag("Shield"))
             {
                 ReturnPool();
                 return;

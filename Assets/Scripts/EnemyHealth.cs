@@ -11,6 +11,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
     [SerializeField] private GameObject decanDie;
     [SerializeField] private HitFlash hitFlash;
     [SerializeField] private Transform damagePoint;
+    [SerializeField] private bool isDron = false;
     private int _currentHp;
 
     private void OnEnable()
@@ -23,7 +24,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
         if (transform.position.y <= damagePoint.position.y)
         {
             _currentHp = _currentHp - damage;
-
+            SoundManager.Instance.PlayHit();
             if (hitFlash != null)
             {
                 hitFlash.Flash();
@@ -50,5 +51,11 @@ public class EnemyHealth : MonoBehaviour, IDamageable
         baseE.SetActive(false);
         turretE.SetActive(false);
         decanDie.SetActive(true);
+        SoundManager.Instance.PlayEnemyDeath();
+
+        if (isDron)
+        {
+            ObjectPoolManager.Instance.Spawn(PoolType.Buff,  transform.position, Quaternion.identity);
+        }
     }
 }

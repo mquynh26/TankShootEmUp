@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7379875396424130924}
   m_Layer: 0
   m_Name: ObjBarn
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destructibleType: 1
-  maxHP: 4
+  maxHP: 5
   baseO: {fileID: 5611656743072343745}
   decalO: {fileID: 4611115345136907094}
   hitFlash: {fileID: 7379875396424130924}

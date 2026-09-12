@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 8019536732875683860}
   m_Layer: 3
   m_Name: ObjFence1
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

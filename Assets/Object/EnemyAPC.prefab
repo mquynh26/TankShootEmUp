@@ -333,12 +333,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58db09b82dc72d141a1a4f249e0ce535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 1
+  maxHp: 2
   baseE: {fileID: 3400909492224199803}
   turretE: {fileID: 1433238495222266319}
   decanDie: {fileID: 3183537618061183651}
   hitFlash: {fileID: 7072567541397945955}
   damagePoint: {fileID: 779416715700353046, guid: c7e94fffa03b24a43b1de18b4a9ffe4c, type: 3}
+  isDron: 0
 --- !u!114 &7072567541397945955
 MonoBehaviour:
   m_ObjectHideFlags: 0

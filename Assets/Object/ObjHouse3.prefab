@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 4884441475798550855}
   m_Layer: 0
   m_Name: ObjHouse3
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destructibleType: 1
-  maxHP: 3
+  maxHP: 4
   baseO: {fileID: 110330092435568319}
   decalO: {fileID: 5351791772522418373}
   hitFlash: {fileID: 4884441475798550855}

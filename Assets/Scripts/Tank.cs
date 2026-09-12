@@ -5,11 +5,12 @@ using UnityEngine;
 public class Tank : MonoBehaviour
 {
     [SerializeField] private Transform killPoint;
+    
     void FixedUpdate()
     {
         if (Mathf.Abs(transform.position.y - killPoint.position.y) < 0.05f)
         {
-            //GameOver();
+            GameManager.Instance.GameOver();
         }
     }
 }

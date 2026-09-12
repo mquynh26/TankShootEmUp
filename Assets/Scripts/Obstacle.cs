@@ -35,7 +35,7 @@ public class Obstacle : MonoBehaviour, IDamageable
                 hitFlash.Flash();
             }
             _currentHP = _currentHP - damage;
-
+            SoundManager.Instance.PlayHit();
             if (_currentHP <= 0)
             {
                 DestroyObstacle();
@@ -58,5 +58,8 @@ public class Obstacle : MonoBehaviour, IDamageable
         GetComponent<Collider2D>().enabled = false;
         baseO.SetActive(false);
         decalO.SetActive(true);
+        if(gameObject.CompareTag("Building")) SoundManager.Instance.PlayBuilding();
+        else if (gameObject.CompareTag("Tree")) SoundManager.Instance.PlayTree();
+        else if (gameObject.CompareTag("Bumm")) SoundManager.Instance.PlayEnemyDeath();
     }
 }

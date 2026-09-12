@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: -2888320174830575672}
   m_Layer: 9
   m_Name: EnemyBullet2
-  m_TagString: BulletEnemy
+  m_TagString: BulletEnemy2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

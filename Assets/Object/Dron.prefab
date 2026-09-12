@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 6986290278927653521}
   - component: {fileID: 5326714458115391657}
   - component: {fileID: 2706727491546483468}
+  - component: {fileID: 7881127492098201646}
   m_Layer: 10
   m_Name: Dron
   m_TagString: Untagged
@@ -118,6 +119,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 282705639939536502}
+  - {fileID: 1463892458545875711}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2321834785457671573
@@ -173,7 +175,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2635707930358898427}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -217,7 +219,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c08bed2c18fcc404db4492903109330e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveType: 2
-  moveSpeed: 2
-  moveDistance: 2
+  moveType: 1
+  moveSpeed: 3
+  moveDistance: 3.5
   enemyBase: {fileID: 279863029340132669}
+--- !u!114 &7881127492098201646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2635707930358898427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58db09b82dc72d141a1a4f249e0ce535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHp: 1
+  baseE: {fileID: 279863029340132669}
+  turretE: {fileID: 279863029340132669}
+  decanDie: {fileID: 4024171616881966776}
+  hitFlash: {fileID: 0}
+  damagePoint: {fileID: 779416715700353046, guid: c7e94fffa03b24a43b1de18b4a9ffe4c, type: 3}
+  isDron: 1
+--- !u!1 &4024171616881966776
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1463892458545875711}
+  m_Layer: 0
+  m_Name: dt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1463892458545875711
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4024171616881966776}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.00000011920929, y: -0.026844263, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9183444603989381536}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

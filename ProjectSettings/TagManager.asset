@@ -4,7 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - BulletEnemy
+  - Shield
+  - BulletEnemy2
+  - BulletEnemy1
+  - Building
+  - Tree
+  - Bumm
   layers:
   - Default
   - TransparentFX
@@ -17,7 +22,7 @@ TagManager:
   - PlayerBullet
   - EnemyBullet
   - Dron
-  - 
+  - Buff
   - 
   - 
   - 

@@ -19,5 +19,7 @@ public enum PoolType
     TurretEnemyTriple,
     
     BulletEnemy1,
-    BulletEnemy2
+    BulletEnemy2,
+    
+    Buff
 }

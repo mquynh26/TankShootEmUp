@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 1752288381715564954}
   m_Layer: 0
   m_Name: ObjSiloT
-  m_TagString: Untagged
+  m_TagString: Bumm
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destructibleType: 1
-  maxHP: 6
+  maxHP: 4
   baseO: {fileID: 6065364873862452540}
   decalO: {fileID: 6908700407634549228}
   hitFlash: {fileID: 1752288381715564954}
@@ -317,6 +317,18 @@ PrefabInstance:
     - target: {fileID: 950499325506063535, guid: 59fedc78c5d8f5943bc6de69e6a57d05, type: 3}
       propertyPath: m_Name
       value: Decal_T3
+      objectReference: {fileID: 0}
+    - target: {fileID: 950499325506063535, guid: 59fedc78c5d8f5943bc6de69e6a57d05, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447746151666704007, guid: 59fedc78c5d8f5943bc6de69e6a57d05, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447746151666704007, guid: 59fedc78c5d8f5943bc6de69e6a57d05, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5447746151666704007, guid: 59fedc78c5d8f5943bc6de69e6a57d05, type: 3}
       propertyPath: m_LocalPosition.x

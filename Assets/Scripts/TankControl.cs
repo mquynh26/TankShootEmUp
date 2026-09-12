@@ -14,7 +14,14 @@ public class TankControl : MonoBehaviour
     private Rigidbody2D _rb;
     private Camera _camera;
     private float _zRotationBaseTank;
-    
+    private float _baseMoveSpeed;
+    private Coroutine _speedBuffRoutine;
+ 
+    private void Awake()
+    {
+        _baseMoveSpeed = moveSpeed;
+    }
+ 
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +30,7 @@ public class TankControl : MonoBehaviour
         _zRotationBaseTank = baseTank.transform.rotation.eulerAngles.z;
         gameObject.transform.position = pointPlayer.transform.position;
     }
-
+ 
     // Update is called once per frame
     void Update()
     {
@@ -36,6 +43,13 @@ public class TankControl : MonoBehaviour
     
     void GetInput()
     {
+        if (GameManager.Instance.CurrentState != GameManager.GameState.Playing)
+        {
+            _isMove = false;
+            _moveDirection = Vector2.zero;
+            return;
+        }
+        
         if (Input.GetMouseButton(0))
         {
             Vector2 mousePos = _camera.ScreenToWorldPoint(Input.mousePosition);
@@ -67,12 +81,12 @@ public class TankControl : MonoBehaviour
         }
         RotateTank();
     }
-
+ 
     void RotateTank()
     {
         float angle;
         float targetAngle;
-
+ 
         if (_isMove)
         {
             angle = Mathf.Atan2(_moveDirection.y, _moveDirection.x) * Mathf.Rad2Deg;
@@ -87,10 +101,28 @@ public class TankControl : MonoBehaviour
         {
             targetAngle = _zRotationBaseTank;
         }
-
+ 
         float currentAngle = baseTank.transform.eulerAngles.z;
         float newAngle = Mathf.LerpAngle(currentAngle, targetAngle, rotateSpeed *  Time.fixedDeltaTime);
-
+ 
         baseTank.transform.rotation = Quaternion.Euler(0, 0, newAngle);
+    }
+ 
+    public void ApplySpeedBuff(float multiplier, float duration)
+    {
+        if (_speedBuffRoutine != null)
+        {
+            StopCoroutine(_speedBuffRoutine);
+        }
+ 
+        _speedBuffRoutine = StartCoroutine(SpeedBuffRoutine(multiplier, duration));
+    }
+ 
+    private IEnumerator SpeedBuffRoutine(float multiplier, float duration)
+    {
+        moveSpeed = _baseMoveSpeed * multiplier;
+        yield return new WaitForSeconds(duration);
+        moveSpeed = _baseMoveSpeed;
+        _speedBuffRoutine = null;
     }
 }

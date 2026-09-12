@@ -529,6 +529,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7249921577169062096, guid: 78b37da4e3334d2488d1a105b0add543, type: 3}
+      propertyPath: moveType
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -947,7 +951,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2972019989317510975, guid: 445b310fe7dbce24c803958282ef590b, type: 3}
       propertyPath: maxHP
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4258679074962228129, guid: 445b310fe7dbce24c803958282ef590b, type: 3}
       propertyPath: m_Name
@@ -1199,7 +1203,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2972019989317510975, guid: 445b310fe7dbce24c803958282ef590b, type: 3}
       propertyPath: maxHP
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4258679074962228129, guid: 445b310fe7dbce24c803958282ef590b, type: 3}
       propertyPath: m_Name
@@ -1951,7 +1955,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2972019989317510975, guid: 445b310fe7dbce24c803958282ef590b, type: 3}
       propertyPath: maxHP
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4258679074962228129, guid: 445b310fe7dbce24c803958282ef590b, type: 3}
       propertyPath: m_Name
@@ -2087,7 +2091,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8422978828009369174, guid: 3f6cbc4609ac13548b9e8840855a9b35, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.89
+      value: 0.53
       objectReference: {fileID: 0}
     - target: {fileID: 8422978828009369174, guid: 3f6cbc4609ac13548b9e8840855a9b35, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2207,7 +2211,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3664879226207876758, guid: 562230b296714ef4cb5f6dedcafb4f02, type: 3}
       propertyPath: maxHP
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4254725925414427646, guid: 562230b296714ef4cb5f6dedcafb4f02, type: 3}
       propertyPath: m_Name
