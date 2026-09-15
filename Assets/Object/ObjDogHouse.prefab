@@ -215,6 +215,7 @@ MonoBehaviour:
   decalO: {fileID: 1336945889589106786}
   hitFlash: {fileID: 53199380899958081}
   pointDamage: {fileID: 779416715700353046, guid: c7e94fffa03b24a43b1de18b4a9ffe4c, type: 3}
+  scoreValue: 10
 --- !u!114 &53199380899958081
 MonoBehaviour:
   m_ObjectHideFlags: 0

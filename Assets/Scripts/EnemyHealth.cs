@@ -12,11 +12,13 @@ public class EnemyHealth : MonoBehaviour, IDamageable
     [SerializeField] private HitFlash hitFlash;
     [SerializeField] private Transform damagePoint;
     [SerializeField] private bool isDron = false;
+    [SerializeField] private int scoreValue;
+    [SerializeField] private GameObject deathEffect;
     private int _currentHp;
 
     private void OnEnable()
     {
-        _currentHp = maxHp;
+        _currentHp = maxHp; 
     }
 
     public void TakeDamage(int damage)
@@ -33,6 +35,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
             if (_currentHp <= 0)
             {
                 _currentHp = 0;
+                GameManager.Instance.AddScore(scoreValue);
                 Die();
             }
         }
@@ -51,6 +54,10 @@ public class EnemyHealth : MonoBehaviour, IDamageable
         baseE.SetActive(false);
         turretE.SetActive(false);
         decanDie.SetActive(true);
+        if (deathEffect != null)
+        {
+            deathEffect.SetActive(true);
+        }
         SoundManager.Instance.PlayEnemyDeath();
 
         if (isDron)

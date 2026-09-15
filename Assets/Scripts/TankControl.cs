@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TankControl : MonoBehaviour
 {
     [SerializeField] private float rotateSpeed = 10f;
     [SerializeField] private GameObject baseTank;
     [SerializeField] private GameObject pointPlayer;
+    [SerializeField] private GameObject ui;
+    [SerializeField] private Image fillUi;
     public float moveSpeed = 7f;
     private bool _isMove = false;
     private Vector2 _moveDirection;
@@ -121,7 +124,18 @@ public class TankControl : MonoBehaviour
     private IEnumerator SpeedBuffRoutine(float multiplier, float duration)
     {
         moveSpeed = _baseMoveSpeed * multiplier;
-        yield return new WaitForSeconds(duration);
+        ui.SetActive(true);
+        fillUi.fillAmount = 0f;
+ 
+        float elapsed = 0f;
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            fillUi.fillAmount = Mathf.Clamp01(elapsed / duration);
+            yield return null;
+        }
+        
+        ui.SetActive(false);
         moveSpeed = _baseMoveSpeed;
         _speedBuffRoutine = null;
     }

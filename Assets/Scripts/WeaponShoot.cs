@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WeaponShoot : MonoBehaviour
 {
     [SerializeField] private Transform startShoot;
     [SerializeField] private Transform[] pointShoot;
     [SerializeField] private TurretData turretData;
+    [SerializeField] private GameObject ui;
+    [SerializeField] private Image fillUi;
     private Coroutine _fireRoutine;
  
     private float _fireRateMultiplier = 1f;
@@ -84,7 +87,18 @@ public class WeaponShoot : MonoBehaviour
     private IEnumerator FireRateBuffRoutine(float multiplier, float duration)
     {
         _fireRateMultiplier = multiplier;
-        yield return new WaitForSeconds(duration);
+        ui.SetActive(true);
+        fillUi.fillAmount = 0f;
+ 
+        float elapsed = 0f;
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            fillUi.fillAmount = Mathf.Clamp01(elapsed / duration);
+            yield return null;
+        }
+        
+        ui.SetActive(false);
         _fireRateMultiplier = 1f;
         _fireRateBuffRoutine = null;
     }

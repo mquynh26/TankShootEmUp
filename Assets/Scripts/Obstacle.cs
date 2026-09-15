@@ -17,6 +17,8 @@ public class Obstacle : MonoBehaviour, IDamageable
     [SerializeField] private GameObject decalO;
     [SerializeField] private HitFlash hitFlash;
     [SerializeField] private Transform pointDamage;
+    [SerializeField] private int scoreValue;
+    [SerializeField] private GameObject deathEffect;
     private int _currentHP;
 
     private void OnEnable()
@@ -38,6 +40,8 @@ public class Obstacle : MonoBehaviour, IDamageable
             SoundManager.Instance.PlayHit();
             if (_currentHP <= 0)
             {
+                _currentHP = 0;
+                GameManager.Instance.AddScore(scoreValue);
                 DestroyObstacle();
             }
         }
@@ -58,6 +62,10 @@ public class Obstacle : MonoBehaviour, IDamageable
         GetComponent<Collider2D>().enabled = false;
         baseO.SetActive(false);
         decalO.SetActive(true);
+        if (deathEffect != null)
+        {
+            deathEffect.SetActive(true);
+        }
         if(gameObject.CompareTag("Building")) SoundManager.Instance.PlayBuilding();
         else if (gameObject.CompareTag("Tree")) SoundManager.Instance.PlayTree();
         else if (gameObject.CompareTag("Bumm")) SoundManager.Instance.PlayEnemyDeath();
