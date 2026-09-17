@@ -15,7 +15,8 @@ public class GameManager : MonoBehaviour
         Idle,
         Playing,
         Paused,
-        GameOver
+        GameOver,
+        EndDemo
     }
  
     public GameState CurrentState { get; private set; } = GameState.Idle;
@@ -27,6 +28,7 @@ public class GameManager : MonoBehaviour
     public event Action<float> OnScoreChange;
     public event Action<float> OnBestScoreChanged;
     public event Action<int> OnCountdownStartChanged; 
+    public event Action OnDemoEnd;
     public float Score { get; private set; }
     public float BestScore { get; private set; }
  
@@ -134,5 +136,17 @@ public class GameManager : MonoBehaviour
         
         CurrentState = GameState.Playing;
         Time.timeScale = 1f;
+    }
+    
+    public void EndDemo()
+    {
+        if (CurrentState != GameState.Playing)
+        {
+            return;
+        }
+        CurrentState = GameState.EndDemo;
+        Time.timeScale = 0f;
+        SoundManager.Instance.PlayGameOver();
+        OnDemoEnd?.Invoke();
     }
 }

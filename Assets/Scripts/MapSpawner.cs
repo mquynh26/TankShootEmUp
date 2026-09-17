@@ -2,33 +2,39 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class MapSpawner : MonoBehaviour
 {
     public GameObject pointStart;
     public GameObject pointSpawn;
     public GameObject pointEnd;
- 
+
     [SerializeField] private int bgCount = 4;
     [SerializeField] private int platCount;
- 
-    private GameObject _pieceA;
-    private GameObject _pieceB;
- 
-    private int _bgIndex;
+
+    private class MapPiece
+    {
+        public GameObject Object;
+        public PoolType PoolType;
+    }
+
+    private MapPiece _pieceA;
+    private MapPiece _pieceB;
+
     private int _platIndex;
-    
+    private int _lastBgIndex = -1;
+
     private bool _switchToPlat;
-    private bool _inPlatMode;
- 
+
     private void Start()
     {
         GameManager.Instance.OnGameStart += HandleGameStart;
- 
+
         _pieceA = SpawnBg(pointStart.transform.position);
         _pieceB = SpawnBg(pointSpawn.transform.position);
     }
- 
+
     private void OnDestroy()
     {
         if (GameManager.Instance != null)
@@ -36,60 +42,96 @@ public class MapSpawner : MonoBehaviour
             GameManager.Instance.OnGameStart -= HandleGameStart;
         }
     }
- 
+
     private void HandleGameStart()
     {
         _switchToPlat = true;
     }
- 
+
     private void FixedUpdate()
     {
         CheckPiece(ref _pieceA);
         CheckPiece(ref _pieceB);
     }
- 
-    private void CheckPiece(ref GameObject piece)
+
+    private void CheckPiece(ref MapPiece piece)
     {
-        if (piece == null)
+        if (piece == null || piece.Object == null)
         {
             return;
         }
- 
-        if (piece.transform.position.y >= pointEnd.transform.position.y)
+
+        if (piece.Object.transform.position.y >= pointEnd.transform.position.y)
         {
             return;
         }
- 
-        PoolType finishedType = _inPlatMode ? PoolType.Plv : PoolType.Bg;
-        ObjectPoolManager.Instance.ReturnPool(finishedType, piece);
- 
+
+        // Trả đúng PoolType của chính piece
+        ObjectPoolManager.Instance.ReturnPool(piece.PoolType, piece.Object);
+
+        // Spawn tiếp
         if (!_switchToPlat)
         {
             piece = SpawnBg(pointSpawn.transform.position);
         }
         else
         {
-            _inPlatMode = true;
             piece = SpawnNextPlat(pointSpawn.transform.position);
         }
     }
- 
-    private GameObject SpawnBg(Vector2 position)
+
+    private MapPiece SpawnBg(Vector2 position)
     {
-        GameObject bg = ObjectPoolManager.Instance.Spawn(PoolType.Bg, _bgIndex, position, Quaternion.identity);
-        _bgIndex = (_bgIndex + 1) % bgCount;
-        return bg;
-    }
- 
-    private GameObject SpawnNextPlat(Vector2 position)
-    {
-        if (_platIndex >= platCount)
+        if (bgCount <= 0)
         {
             return null;
         }
- 
+
+        int randomIndex;
+
+        do
+        {
+            randomIndex = Random.Range(0, bgCount);
+        }
+        while (randomIndex == _lastBgIndex && bgCount > 1);
+
+        _lastBgIndex = randomIndex;
+
+        GameObject bg = ObjectPoolManager.Instance.Spawn(PoolType.Bg, randomIndex, position, Quaternion.identity);
+
+        if (bg == null)
+        {
+            return null;
+        }
+
+        return new MapPiece
+        {
+            Object = bg,
+            PoolType = PoolType.Bg
+        };
+    }
+
+    private MapPiece SpawnNextPlat(Vector2 position)
+    {
+        if (_platIndex >= platCount)
+        {
+            GameManager.Instance.EndDemo();
+            return null;
+        }
+
         GameObject plat = ObjectPoolManager.Instance.Spawn(PoolType.Plv, _platIndex, position, Quaternion.identity);
+
         _platIndex++;
-        return plat;
+
+        if (plat == null)
+        {
+            return null;
+        }
+
+        return new MapPiece
+        {
+            Object = plat,
+            PoolType = PoolType.Plv
+        };
     }
 }

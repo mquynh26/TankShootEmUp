@@ -10,13 +10,15 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject uiPanel;
     [SerializeField] private GameObject pausePanel;
     [SerializeField] private GameObject gameOverPanel;
-
+    [SerializeField] private GameObject endDemoPanel;
     [SerializeField] private TextMeshProUGUI cownDownText;
     [SerializeField] private TextMeshProUGUI scoreTextUi;
     [SerializeField] private TextMeshProUGUI scoreTextPause;
     [SerializeField] private TextMeshProUGUI scoreTextOver;
     [SerializeField] private TextMeshProUGUI bestScoreTextPause;
     [SerializeField] private TextMeshProUGUI bestScoreTextOver;
+    [SerializeField] private TextMeshProUGUI scoreTextEnd;
+    [SerializeField] private TextMeshProUGUI bestScoreTextEnd;
     [SerializeField] private Image hpFillImage;
  
     [SerializeField] private TankHealth tankHealth;
@@ -32,6 +34,7 @@ public class UIManager : MonoBehaviour
         GameManager.Instance.OnScoreChange += HandleScoreChanged;
         GameManager.Instance.OnBestScoreChanged += HandleBestScoreChanged;
         GameManager.Instance.OnCountdownStartChanged += HandleCountDown;
+        GameManager.Instance.OnDemoEnd += HandleEndDemo;
         tankHealth.OnChangeHp += HandleHpChanged;
         ShowOnly(waitPanel);
     }
@@ -47,6 +50,7 @@ public class UIManager : MonoBehaviour
             GameManager.Instance.OnScoreChange -= HandleScoreChanged;
             GameManager.Instance.OnBestScoreChanged -= HandleBestScoreChanged;
             GameManager.Instance.OnCountdownStartChanged -= HandleCountDown;
+            GameManager.Instance.OnDemoEnd -= HandleEndDemo;
         }
  
         if (tankHealth != null)
@@ -74,6 +78,11 @@ public class UIManager : MonoBehaviour
     {
         ShowOnly(gameOverPanel);
     }
+
+    private void HandleEndDemo()
+    {
+        ShowOnly(endDemoPanel);
+    }
  
     private void HandleScoreChanged(float score)
     {
@@ -81,6 +90,7 @@ public class UIManager : MonoBehaviour
         scoreTextUi.text = _scoreNow.ToString();
         scoreTextOver.text = _scoreNow.ToString();
         scoreTextPause.text = _scoreNow.ToString();
+        scoreTextEnd.text = _scoreNow.ToString();
     }
 
     private void HandleBestScoreChanged(float bestScore)
@@ -88,6 +98,7 @@ public class UIManager : MonoBehaviour
         _bestScore = Mathf.RoundToInt(bestScore);
         bestScoreTextOver.text = _bestScore.ToString();
         bestScoreTextPause.text = _bestScore.ToString();
+        bestScoreTextEnd.text = _bestScore.ToString();
     }
  
     private void HandleHpChanged(int current, int max)
@@ -114,5 +125,6 @@ public class UIManager : MonoBehaviour
         uiPanel.SetActive(panel == uiPanel);
         pausePanel.SetActive(panel == pausePanel);
         gameOverPanel.SetActive(panel == gameOverPanel);
+        endDemoPanel.SetActive(panel == endDemoPanel);
     }
 }

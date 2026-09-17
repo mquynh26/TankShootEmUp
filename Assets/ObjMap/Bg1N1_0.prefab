@@ -1150,7 +1150,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3664879226207876758, guid: 562230b296714ef4cb5f6dedcafb4f02, type: 3}
       propertyPath: maxHP
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4254725925414427646, guid: 562230b296714ef4cb5f6dedcafb4f02, type: 3}
       propertyPath: m_Name
@@ -1484,7 +1484,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1321458889846722883, guid: a3ef9c19bc629204c92008c162c88c70, type: 3}
       propertyPath: maxHp
-      value: 10
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4034151981695678455, guid: a3ef9c19bc629204c92008c162c88c70, type: 3}
       propertyPath: m_Name

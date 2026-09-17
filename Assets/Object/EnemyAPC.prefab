@@ -134,6 +134,8 @@ MonoBehaviour:
   pointShoot:
   - {fileID: 5136562182883047387}
   turretData: {fileID: 11400000, guid: 029dd800bbda70548bd0881c5bea6d44, type: 2}
+  ui: {fileID: 0}
+  fillUi: {fileID: 0}
 --- !u!114 &2914794958366883542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,7 +359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderers:
-  - {fileID: 4015248886226113943}
+  - {fileID: 2522560559272426293}
   - {fileID: 4052536973516176174}
   flashMaterial: {fileID: 2100000, guid: e1688fdac8e532a47bcfcab34efcc226, type: 2}
   flashDuration: 0.08

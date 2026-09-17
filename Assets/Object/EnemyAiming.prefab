@@ -337,6 +337,8 @@ MonoBehaviour:
   pointShoot:
   - {fileID: 1420564844589832483}
   turretData: {fileID: 11400000, guid: 4ffcfba5862ada34ba7ba8a3ff6edb35, type: 2}
+  ui: {fileID: 0}
+  fillUi: {fileID: 0}
 --- !u!114 &1294411521339449248
 MonoBehaviour:
   m_ObjectHideFlags: 0

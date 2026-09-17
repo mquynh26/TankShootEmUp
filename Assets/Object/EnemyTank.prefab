@@ -150,6 +150,8 @@ MonoBehaviour:
   pointShoot:
   - {fileID: 6766710557954949275}
   turretData: {fileID: 11400000, guid: 76799c186fd9c104eaeddfc1a726ef56, type: 2}
+  ui: {fileID: 0}
+  fillUi: {fileID: 0}
 --- !u!1 &2571563322663145678
 GameObject:
   m_ObjectHideFlags: 0
@@ -410,7 +412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderers:
-  - {fileID: 5365762402039867673}
+  - {fileID: 1668540005040241989}
   - {fileID: 768502230578914299}
   flashMaterial: {fileID: 2100000, guid: e1688fdac8e532a47bcfcab34efcc226, type: 2}
   flashDuration: 0.08

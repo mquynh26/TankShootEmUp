@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,7 +17,13 @@ public class EnemyMove : MonoBehaviour
     [SerializeField] private float moveDistance = 2f;
     [SerializeField] private GameObject enemyBase;
     private Vector3 _startPosition;
+    private Quaternion _startRotation;
     private float _direction = 1f;
+
+    private void Awake()
+    {
+        _startRotation = enemyBase.transform.localRotation;
+    }
 
     private void OnEnable()
     {
@@ -61,14 +68,14 @@ public class EnemyMove : MonoBehaviour
 
     private void Rotate()
     {
-        if (moveType == MoveType.None)
-            return;
         if (moveType == MoveType.Horizontal)
         {
-            enemyBase.transform.Rotate(0f, 0f, 90f);
-        } else if (moveType == MoveType.Vertical)
+            enemyBase.transform.localRotation =
+                _startRotation * Quaternion.Euler(0f, 0f, 90f);
+        }
+        else
         {
-            enemyBase.transform.Rotate(0f, 0f, 0);
+            enemyBase.transform.localRotation = _startRotation;
         }
     }
 }
