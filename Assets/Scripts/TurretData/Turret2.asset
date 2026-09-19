@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Turret2
   m_EditorClassIdentifier: 
   fireMode: 0
-  turretType: 4
-  bulletType: 5
+  turretType: 10
+  bulletType: 11
   bulletSpeed: 6
   bulletDamage: 2
   fireRate: 1

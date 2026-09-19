@@ -364,7 +364,7 @@ MonoBehaviour:
   moveType: 2
   moveSpeed: 2
   moveDistance: 2
-  enemyBase: {fileID: 253478957192562241}
+  enemyBase: {fileID: 3839727479151490636}
 --- !u!114 &684373224392289059
 MonoBehaviour:
   m_ObjectHideFlags: 0

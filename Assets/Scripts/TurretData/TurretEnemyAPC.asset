@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: TurretEnemyAPC
   m_EditorClassIdentifier: 
   fireMode: 0
-  turretType: 9
-  bulletType: 15
+  turretType: 15
+  bulletType: 21
   bulletSpeed: 7
   bulletDamage: 1
   fireRate: 2.3

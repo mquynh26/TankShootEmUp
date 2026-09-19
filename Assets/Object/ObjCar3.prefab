@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4ba99d050d57dc49a6f6e67d9b1861e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destructibleType: 2
+  destructibleType: 1
   maxHP: 2
   baseO: {fileID: 876923069429177520}
   decalO: {fileID: 2511613454377442825}

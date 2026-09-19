@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: TurretEnemyBase
   m_EditorClassIdentifier: 
   fireMode: 1
-  turretType: 11
-  bulletType: 16
+  turretType: 17
+  bulletType: 22
   bulletSpeed: 7
   bulletDamage: 1
   fireRate: 0

@@ -308,10 +308,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c08bed2c18fcc404db4492903109330e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveType: 1
+  moveType: 2
   moveSpeed: 2
   moveDistance: 2
-  enemyBase: {fileID: 3400909492224199803}
+  enemyBase: {fileID: 4401131385577780236}
 --- !u!114 &6334327963887876376
 MonoBehaviour:
   m_ObjectHideFlags: 0

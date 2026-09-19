@@ -2225,7 +2225,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7000037212031322827, guid: 89e59863c264afe4887c8b786889cfbf, type: 3}
       propertyPath: maxHp
-      value: 30
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7000037212031322827, guid: 89e59863c264afe4887c8b786889cfbf, type: 3}
       propertyPath: hitFlash
@@ -3690,54 +3690,27 @@ MonoBehaviour:
     - {fileID: 6398570564114851019, guid: 5364241c8bdfbca4288d4b25ff88d47d, type: 3}
     - {fileID: 1008822234573684960, guid: db725c75cc3d4b84d8cc1a2e9d85c828, type: 3}
     poolSize: 1
-  - poolType: 3
+  - poolType: 9
     prefab:
     - {fileID: 33881448832818555, guid: 79508d6d68ca7b54cace5f56cad0749c, type: 3}
     poolSize: 20
-  - poolType: 15
+  - poolType: 21
     prefab:
     - {fileID: 5026291272125731513, guid: 08db106c4f11886498a1fc07ed84c427, type: 3}
     poolSize: 80
-  - poolType: 16
+  - poolType: 22
     prefab:
     - {fileID: 8020105940213223002, guid: c6693b0a75114084c813ed3dcfd81b85, type: 3}
     poolSize: 30
-  - poolType: 5
+  - poolType: 11
     prefab:
     - {fileID: 2144674260912299825, guid: 0d1b03c8873e410498e0781be5420a1f, type: 3}
     poolSize: 15
-  - poolType: 7
+  - poolType: 13
     prefab:
     - {fileID: 2470307079897049983, guid: 159a4bee00202e54d8a5327892ff3314, type: 3}
     poolSize: 15
-  - poolType: 1
-    prefab:
-    - {fileID: 4041508539530176988, guid: 599cfd8385c729548a716fd05b40691f, type: 3}
-    - {fileID: 5651024724821055960, guid: 4bdc65c26b8cfbb45a71ffb9eff0789e, type: 3}
-    - {fileID: 3132340549013924501, guid: b72eaad9668520b40845392fc67ec594, type: 3}
-    - {fileID: 7436966304475413220, guid: b103310ccb294a84f97392e194e93234, type: 3}
-    - {fileID: 4577078003851002716, guid: 603b6c8b24e8b5b43ba9c5a2a33b931a, type: 3}
-    - {fileID: 1691287571803636723, guid: e92b826300eaff44dadd0e9dcca01204, type: 3}
-    - {fileID: 3586918038258615829, guid: cd7ce9e48ad7ec74c9fb1669126211d7, type: 3}
-    - {fileID: 2763089900018389885, guid: 95a758906b1744d4298c2edd0042015e, type: 3}
-    - {fileID: 3992649687939423705, guid: a46d9e9c321366f4ba74481c6b6dc3f3, type: 3}
-    - {fileID: 873238906607680067, guid: 7e1aa8d0c4f21344ca0054cfff43bb51, type: 3}
-    - {fileID: 7446736095167763907, guid: 6fdff537ed1f9b54ea3df8c4ef2e3c42, type: 3}
-    - {fileID: 1419257695057005287, guid: 513c109d65c11274fa608f8a0b0cb707, type: 3}
-    - {fileID: 6076831548085377588, guid: 3344a2e9d006cf447ac619c759f59af5, type: 3}
-    - {fileID: 2892634830334937254, guid: 6ffa119d0dd102845adcd5fa7de2118c, type: 3}
-    - {fileID: 196785616674085170, guid: bdce7dbac6755204186a7733243acb76, type: 3}
-    - {fileID: 8326626582370123375, guid: 7caeffc7573305e4d9e4befc221d1e02, type: 3}
-    - {fileID: 3908842098400014712, guid: e1e2202a511a5e447bd791b7301d14fb, type: 3}
-    - {fileID: 6542005937079350904, guid: 3be3061f0f758d441a9b2ea113ba85d0, type: 3}
-    - {fileID: 1747640336080129159, guid: ebc317999010bd44e835b0f35330f21f, type: 3}
-    - {fileID: 7188000195093309842, guid: 3f3c17f3f78091b47add12026e633d30, type: 3}
-    - {fileID: 8974835729879338221, guid: df1da61d622e1164c8084bd75291671b, type: 3}
-    - {fileID: 5230492773484920845, guid: 7add3c9c239d73449b3ee6c18038a13f, type: 3}
-    - {fileID: 3421852135278677458, guid: e14f6181d6acd2f4e8206f1fff0ba119, type: 3}
-    - {fileID: 9103569487950932147, guid: fc64d3bb092dbe6408182503d892b206, type: 3}
-    poolSize: 1
-  - poolType: 17
+  - poolType: 23
     prefab:
     - {fileID: 4329237332549685240, guid: 43976c0ed32f5844ea23fd147f49c4de, type: 3}
     - {fileID: 1682085453039844073, guid: 8a3f5802a28247347b67aeadabeaa002, type: 3}
@@ -3747,6 +3720,111 @@ MonoBehaviour:
     - {fileID: 3914408924526257522, guid: 2a35e8d579666364cb600d5a18558d61, type: 3}
     - {fileID: 3845840464654422848, guid: 28bfd8bf1a64e2e459063cebbd8bb8ed, type: 3}
     poolSize: 2
+  - poolType: 1
+    prefab:
+    - {fileID: 4041508539530176988, guid: 599cfd8385c729548a716fd05b40691f, type: 3}
+    - {fileID: 5651024724821055960, guid: 4bdc65c26b8cfbb45a71ffb9eff0789e, type: 3}
+    - {fileID: 196785616674085170, guid: bdce7dbac6755204186a7733243acb76, type: 3}
+    - {fileID: 8326626582370123375, guid: 7caeffc7573305e4d9e4befc221d1e02, type: 3}
+    - {fileID: 6533333122277159773, guid: 1ec72ff4c46ae3b4098c6ef584e9ef4f, type: 3}
+    - {fileID: 819194217527705794, guid: ab8c1efc298c84347bcf1aebdd23c24a, type: 3}
+    - {fileID: 6439530208124892927, guid: d6a6382d7e74cf74893b620928ed6e3a, type: 3}
+    - {fileID: 5265065495762209307, guid: b35b004dc5a93854e8641fbb704b614d, type: 3}
+    - {fileID: 5089672265576084871, guid: 742dd14875d0e344faaf410430a56da6, type: 3}
+    - {fileID: 7868450382246622056, guid: 59f3ca1e5ad787a44a5552be224d1d0e, type: 3}
+    - {fileID: 4190852996692429504, guid: 9305048b61c2d074c84837103e623ed2, type: 3}
+    - {fileID: 6444952473922255037, guid: bfe016c2d08cbaa469631462f160f617, type: 3}
+    poolSize: 1
+  - poolType: 2
+    prefab:
+    - {fileID: 3132340549013924501, guid: b72eaad9668520b40845392fc67ec594, type: 3}
+    - {fileID: 7436966304475413220, guid: b103310ccb294a84f97392e194e93234, type: 3}
+    - {fileID: 3908842098400014712, guid: e1e2202a511a5e447bd791b7301d14fb, type: 3}
+    - {fileID: 6542005937079350904, guid: 3be3061f0f758d441a9b2ea113ba85d0, type: 3}
+    - {fileID: 5709710991653487038, guid: dcd3e1ded4fe0c345a19f616f59a88e5, type: 3}
+    - {fileID: 6328820530854139837, guid: 3c64eb8eb0d44414cbae28a0da8c30b4, type: 3}
+    - {fileID: 4955361154372875857, guid: b119027da31aa084ca799812d70c9feb, type: 3}
+    - {fileID: 5499434093419671309, guid: e7c18044732237442b5f28de58d0bda8, type: 3}
+    - {fileID: 937170127027725707, guid: 9a6be38ba2f8a6540baaba0310a64a52, type: 3}
+    - {fileID: 8685187000445069646, guid: 1e4ea9c4c5d5e1c4398d5a20dc0a8443, type: 3}
+    - {fileID: 72200290951433761, guid: 4640ed4e6f72a254e81e2a50865fc105, type: 3}
+    - {fileID: 7286285919761897111, guid: 5a1b6cdd2f41d204ab51279682ce9d54, type: 3}
+    poolSize: 1
+  - poolType: 3
+    prefab:
+    - {fileID: 4577078003851002716, guid: 603b6c8b24e8b5b43ba9c5a2a33b931a, type: 3}
+    - {fileID: 1691287571803636723, guid: e92b826300eaff44dadd0e9dcca01204, type: 3}
+    - {fileID: 1747640336080129159, guid: ebc317999010bd44e835b0f35330f21f, type: 3}
+    - {fileID: 7188000195093309842, guid: 3f3c17f3f78091b47add12026e633d30, type: 3}
+    - {fileID: 3159096707341779607, guid: 1b0ac747aee3080499a996384ad0b995, type: 3}
+    - {fileID: 4854768550934792904, guid: d446c644598400d4d986b8de81a53536, type: 3}
+    - {fileID: 6123155649340593733, guid: 588f9f3b1570235458d0e3c54bf043d1, type: 3}
+    - {fileID: 412222610659779456, guid: e71f9eecfc5dd874cb849c5c8c592044, type: 3}
+    - {fileID: 315927180861726758, guid: 88d7e766a4cecea4a9d751c0be68ba36, type: 3}
+    - {fileID: 8968795946141830092, guid: d99a7b52d2e0a854580f6a3dccd3a687, type: 3}
+    - {fileID: 5782765525016838201, guid: 34d4429601280854fb06709e1123ceaf, type: 3}
+    - {fileID: 8978249019386992631, guid: b3524c8a2e74af541a59a94c758557aa, type: 3}
+    poolSize: 1
+  - poolType: 4
+    prefab:
+    - {fileID: 3586918038258615829, guid: cd7ce9e48ad7ec74c9fb1669126211d7, type: 3}
+    - {fileID: 2763089900018389885, guid: 95a758906b1744d4298c2edd0042015e, type: 3}
+    - {fileID: 8974835729879338221, guid: df1da61d622e1164c8084bd75291671b, type: 3}
+    - {fileID: 5230492773484920845, guid: 7add3c9c239d73449b3ee6c18038a13f, type: 3}
+    - {fileID: 6687946096773506622, guid: 214065fbc11f3e841b5cda9fa9c4a614, type: 3}
+    - {fileID: 6026856734705099138, guid: 3c0a8833822981a4d853937b274bd4af, type: 3}
+    - {fileID: 4464398834399588179, guid: 032666a09ab4f254091eb23173b42944, type: 3}
+    - {fileID: 5620197788247186934, guid: 4c386cafc0ee56d43a88525df1a9fd34, type: 3}
+    - {fileID: 1614721069958110881, guid: c8b3836b65ec61d4ab399a8da5153d8b, type: 3}
+    - {fileID: 1211551680101438635, guid: cb594b4d8928f514eab360e54339a2c2, type: 3}
+    - {fileID: 7016175464757131527, guid: 6623fd090662764498cff8c2bb885e50, type: 3}
+    - {fileID: 5356122545257946779, guid: cbcbfe4f83b08cd47b88a0be5d8ec934, type: 3}
+    poolSize: 1
+  - poolType: 5
+    prefab:
+    - {fileID: 3992649687939423705, guid: a46d9e9c321366f4ba74481c6b6dc3f3, type: 3}
+    - {fileID: 873238906607680067, guid: 7e1aa8d0c4f21344ca0054cfff43bb51, type: 3}
+    - {fileID: 3421852135278677458, guid: e14f6181d6acd2f4e8206f1fff0ba119, type: 3}
+    - {fileID: 9103569487950932147, guid: fc64d3bb092dbe6408182503d892b206, type: 3}
+    - {fileID: 1012795145443022822, guid: d6abc5738d058fc4c91933a489b24660, type: 3}
+    - {fileID: 3875976988256443471, guid: 11f7fdba536a66740bca73a5e69be7fc, type: 3}
+    - {fileID: 7924759581610755519, guid: a6980d5b60df8254786080d683b0281e, type: 3}
+    - {fileID: 5486205250355618955, guid: 04c1c47055a587c45b57d4905e25a8b7, type: 3}
+    - {fileID: 4674443705969556079, guid: 93cc81d35ea24544a82a9740cf20d1c1, type: 3}
+    - {fileID: 7953532323681916158, guid: d6e61722300cceb42904729678ecca6e, type: 3}
+    - {fileID: 555820528963521347, guid: 9d80ac3200417bf43af968babd745354, type: 3}
+    - {fileID: 6853953840691173614, guid: 3a0b330a85adc5c448bd442e2160db7f, type: 3}
+    poolSize: 1
+  - poolType: 6
+    prefab:
+    - {fileID: 7446736095167763907, guid: 6fdff537ed1f9b54ea3df8c4ef2e3c42, type: 3}
+    - {fileID: 1419257695057005287, guid: 513c109d65c11274fa608f8a0b0cb707, type: 3}
+    - {fileID: 4352106379123325591, guid: 235a7c4aeae3b704d8e49cd35d6ed6e0, type: 3}
+    - {fileID: 2885028809654191953, guid: 713ff959ab67e4f4280c66542e621de8, type: 3}
+    - {fileID: 3079140862549992433, guid: dd01136f32ab21b4ba0a5d596c4c2763, type: 3}
+    - {fileID: 5437661622129821600, guid: 113eaf824006b5f448ed8502023e5b3e, type: 3}
+    - {fileID: 5796005881668494162, guid: 57ec22d26f8f2004d87913a292abd9ca, type: 3}
+    - {fileID: 9222524057707588114, guid: 8bd05f84072b2eb48a967c31a5fc7748, type: 3}
+    - {fileID: 3714819351380181588, guid: a800e42132300fb4099aa536b94e78a4, type: 3}
+    - {fileID: 6272906749638347052, guid: 484f7a0129a75e64a8fe4dd5c05e49a5, type: 3}
+    - {fileID: 4250007586366138956, guid: dfe738094db2d944ea2311c9e2ff4f04, type: 3}
+    - {fileID: 2645099130934693121, guid: 6ca7e5d8a11d3e44cbb6bae4e90fe2ca, type: 3}
+    poolSize: 1
+  - poolType: 7
+    prefab:
+    - {fileID: 6076831548085377588, guid: 3344a2e9d006cf447ac619c759f59af5, type: 3}
+    - {fileID: 2892634830334937254, guid: 6ffa119d0dd102845adcd5fa7de2118c, type: 3}
+    - {fileID: 1547020722465196688, guid: b2522095f2431f2468b285af483321da, type: 3}
+    - {fileID: 8863960554529160325, guid: c6bcfb5b6873fee4e871d6ff713dde90, type: 3}
+    - {fileID: 1796427178194527582, guid: bc122a07b7d3ebf45b1ccce7a95fac11, type: 3}
+    - {fileID: 796296763300411491, guid: 5e2dc910e6f76e542b8ca72d7c734532, type: 3}
+    - {fileID: 4156345410537666781, guid: a7ba1e6b764cb5b42a95373917f8696b, type: 3}
+    - {fileID: 4827394034661969762, guid: bbcd0f9197196e843bf999e58cc7114b, type: 3}
+    - {fileID: 2908138868243516381, guid: 144d139a5764976409ff38af628b1645, type: 3}
+    - {fileID: 7821351504973386727, guid: 1bb04d88837041a4298ae9488a5da4e8, type: 3}
+    - {fileID: 3557510312804759598, guid: 96eb3d0552e742e40a23404dadfb7960, type: 3}
+    - {fileID: 8669039520852715346, guid: 83aaec89a391fd147b2d798768be4a41, type: 3}
+    poolSize: 1
 --- !u!4 &1161908623
 Transform:
   m_ObjectHideFlags: 0
@@ -6213,7 +6291,21 @@ MonoBehaviour:
   pointSpawn: {fileID: 1879356111}
   pointEnd: {fileID: 5354775386108396767}
   bgCount: 4
-  platCount: 24
+  platGroups:
+  - platType: 1
+    variantCount: 12
+  - platType: 2
+    variantCount: 12
+  - platType: 3
+    variantCount: 12
+  - platType: 4
+    variantCount: 12
+  - platType: 5
+    variantCount: 12
+  - platType: 6
+    variantCount: 12
+  - platType: 7
+    variantCount: 12
 --- !u!4 &1907547130
 Transform:
   m_ObjectHideFlags: 0

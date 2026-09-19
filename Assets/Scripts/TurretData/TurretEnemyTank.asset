@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: TurretEnemyTank
   m_EditorClassIdentifier: 
   fireMode: 0
-  turretType: 8
-  bulletType: 15
+  turretType: 14
+  bulletType: 21
   bulletSpeed: 7
   bulletDamage: 1
   fireRate: 1.3

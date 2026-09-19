@@ -7,7 +7,7 @@ using UnityEngine;
 public class PlatMap : MonoBehaviour
 {
     public static float Speed;
-    [SerializeField] private float speed = 3.5f;
+    [SerializeField] private float speed = 2f;
     void Awake()
     {
         Speed = speed;

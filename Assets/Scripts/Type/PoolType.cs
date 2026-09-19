@@ -1,7 +1,13 @@
 public enum PoolType
 {
     Bg,
-    Plv,
+    Plv1,
+    Plv2,
+    Plv3,
+    Plv4,
+    Plv5,
+    Plv6,
+    Plv7,
     
     Turret1,
     BulletPlayer1,

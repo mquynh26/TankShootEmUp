@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: TurretEnemyTriangle
   m_EditorClassIdentifier: 
   fireMode: 1
-  turretType: 13
-  bulletType: 16
+  turretType: 19
+  bulletType: 22
   bulletSpeed: 7
   bulletDamage: 1
   fireRate: 0
