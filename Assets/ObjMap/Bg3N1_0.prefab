@@ -935,7 +935,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2972019989317510975, guid: 445b310fe7dbce24c803958282ef590b, type: 3}
       propertyPath: maxHP
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4258679074962228129, guid: 445b310fe7dbce24c803958282ef590b, type: 3}
       propertyPath: m_Name
@@ -1063,7 +1063,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2972019989317510975, guid: 445b310fe7dbce24c803958282ef590b, type: 3}
       propertyPath: maxHP
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4258679074962228129, guid: 445b310fe7dbce24c803958282ef590b, type: 3}
       propertyPath: m_Name
@@ -1133,7 +1133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6231943649211236177, guid: 91fdaafa6e8c84a49af3a87580222900, type: 3}
       propertyPath: maxHP
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7422091889141730296, guid: 91fdaafa6e8c84a49af3a87580222900, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1381,7 +1381,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3664879226207876758, guid: 562230b296714ef4cb5f6dedcafb4f02, type: 3}
       propertyPath: maxHP
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4254725925414427646, guid: 562230b296714ef4cb5f6dedcafb4f02, type: 3}
       propertyPath: m_Name
@@ -1513,7 +1513,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8725564752052984987, guid: a321db13639dc624d84414ea2ee6a3e1, type: 3}
       propertyPath: maxHP
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8943830780433882688, guid: a321db13639dc624d84414ea2ee6a3e1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1823,7 +1823,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 319304576525934647, guid: 304800568424d874e864811d3667ed20, type: 3}
       propertyPath: maxHP
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4165635593282099119, guid: 304800568424d874e864811d3667ed20, type: 3}
       propertyPath: m_Name
@@ -2119,7 +2119,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6160830498785855914, guid: eed009a8e2062964e9d2747d39ccdd21, type: 3}
       propertyPath: maxHP
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2185,7 +2185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7707073763216073280, guid: b2782894beb5b4c42862fc1b26c454c0, type: 3}
       propertyPath: maxHp
-      value: 15
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2251,7 +2251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7707073763216073280, guid: b2782894beb5b4c42862fc1b26c454c0, type: 3}
       propertyPath: maxHp
-      value: 15
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2273,7 +2273,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 684373224392289059, guid: 8286adb6a87683f4f92e09147623fb80, type: 3}
       propertyPath: maxHp
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3839727479151490636, guid: 8286adb6a87683f4f92e09147623fb80, type: 3}
       propertyPath: m_Name
@@ -2449,7 +2449,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7707073763216073280, guid: b2782894beb5b4c42862fc1b26c454c0, type: 3}
       propertyPath: maxHp
-      value: 15
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2577,7 +2577,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7707073763216073280, guid: b2782894beb5b4c42862fc1b26c454c0, type: 3}
       propertyPath: maxHp
-      value: 15
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2661,7 +2661,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2972019989317510975, guid: 445b310fe7dbce24c803958282ef590b, type: 3}
       propertyPath: maxHP
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4258679074962228129, guid: 445b310fe7dbce24c803958282ef590b, type: 3}
       propertyPath: m_Name
